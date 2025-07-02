@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'segoe UI',;
+        }
+        body{
+            background: linear-gradient(235deg, #667eea 0%, #754ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border: 50px;
+        }
+
+        form{
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(67, 121, 221, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-image: url(./back\ png.jpg);
+        }
+
+
+        .inputbox{
+            margin-bottom: 30px;
+            position: relative;
+            width: 100%;
+        }
+        .inputbox input{
+            width: 100%;
+            padding: 10px 20px;
+            border: 2px solsid #ddd;
+            border-radius: 15px;
+            font-size: 16px;
+            background: rgba(red, green, blue, alpha);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+         .inputbox input:focus{
+            border: #754ba2;
+            box-shadow: 0 0 10px rgba(107, 192, 37, 0);
+        }
+    
+
+         
+        .inputbox input:focus + label,
+        .inputbox input:valid + label{
+            top: -10px;
+            left: 15px;
+            font-size: 12px;
+            background: white;
+            padding: 0 5px;
+            color: #754ba2;
+        }
+
+         
+
+        button{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            height: 40px;
+            border-radius: 30px;
+            background:linear-gradient(to right,#667eea, #754ba2);
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        button :hover{
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgb(0,0,0,0.2);
+
+        }
+
+        .Register{
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .Register a {
+            color: #fff;
+            text-decoration: dashed;
+            font-weight: bold;
+            transition: all 0.3s ease;
+
+        }
+
+        .Register a:hover{
+            color: #f0f0f0;
+            text-decoration: underline;
+
+        }
+        
+        .login{
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <form>
+        <h2>LOGIN</h2>
+        <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <label for="">EMAIL</label>
+            <input type="email" id="EMAIL" placeholder="example.email.com">
+        </div>
+
+        <div class="inputbox">
+            <label for="">PASSWORD</label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="password"placeholder="password">
+        </div>
+        <div class="rember me">
+            <label>
+                <input type="checkbox"style="zoom:1,5;">
+                Remaber me
+            </label>
+        </div>
+        <div class="">
+        <button>login</button>
+        </div>
+
+        <div class="Ragister">
+        <label>Don't have an accaunt,</label><a href="#"> Ragister now</a>
+        </div>
+
+        <div>
+        <img src="" alt="">
+        </div>
+    </form>
+    
+</body>
+</html>

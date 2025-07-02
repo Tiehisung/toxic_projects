@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+     <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1>Create A Prodoct</h1>
+        <h4>Add a new product</h4>
+        <div class="top">
+            <label for="">Product Name*</label>
+            <input type="text" id="prodoct" placeholder="Enter product name">
+        </div>
+
+        <div class="mid">
+            <label for="">Product Type*</label>
+            <select id="type"name="type" required>
+            <option>--Select Type--</option>   
+            <option value="">vehicle</option>
+            <option>smartwatch</option>
+            <option>Laptop</option>
+            <option>Tablet</option>
+            <option>Smartphone</option>
+            <option>Other</option>
+            </select>
+        </div>
+
+        <div class="mid">
+            <label for="">Color*</label>
+            <input type="text" id="color" placeholder="e.g.Black,Green">
+        </div>
+
+        <div class="down">
+            <label for="">Price($)*</label>
+            <input type="number" id="price" min="0" step="0,01" placeholder="0.00">
+        </div>
+
+        <button><h2>ADD PRODUCT</h2></button>
+    <table>
+        <caption><h3>PRODUCTS</h3></caption>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Type</th>
+        <th>Color</th>
+        <th>Price ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Vehicle</th>
+            <th>car</th>
+            <th>white</th>
+            <th>$2993</th>
+            </tr>
+
+            <tr>
+            <th>Smartwatch</th>
+            <th>Apple</th>
+            <th>Black</th>
+            <th>$356</th>
+            </tr>
+
+            <tr>
+            <th>laptop</th>
+            <th>Dell</th>
+            <th>Black</th>
+            <th>$110</th>
+            </tr>
+
+            <tr>
+            <th>Tablet</th>
+            <th>Tecno</th>
+            <th>Green</th>
+            <th>$96</th>
+            </tr>
+
+            <tr>
+            <th>smartphone</th>
+            <th>Samsung</th>
+            <th>blue</th>
+            <th>$116</th>
+            </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
+
+
+       
+     
+
+  

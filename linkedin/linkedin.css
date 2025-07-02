@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    font-family: Arial, sans-serif;
+
+}
+
+h2{
+    margin-left: 10px;
+}
+
+main{
+    width: 350px; 
+    height: 550px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px;
+}
+
+button{
+    margin: 10px;
+    width: 90%;
+    border-radius: 20px;
+    height: 45px;
+}
+
+.btn img{
+    height: 1.2rem;
+}
+
+#or{
+    display: flex;
+    gap: 1rem;
+}
+#or hr{
+    flex-grow: 0.4;
+}
+
+input{
+    margin: 10px;
+    width: 88%;
+    border-radius: 8px;
+    height: 40px;
+    font-size: largeh ;
+}
+.show{
+    cursor: pointer;
+    color: rgb(97, 97, 212);
+    font-size: 14px;
+    padding: 0 10px;
+    user-select: none;
+    font-weight: 500;
+}
+
+.link{
+    margin-left: 1rem;
+    
+}
+.checkbox{
+    height: 1rem;
+    width: 2rem;
+    margin-top: 2rem;
+
+}
+
+.foot{
+    color: white;
+    background-color: blue;
+}
+
+h6{
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
