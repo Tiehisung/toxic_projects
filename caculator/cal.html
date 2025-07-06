@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
-    <link rel="stylesheet" href="./cal.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./cal.css" />
+  </head>
+  <body>
     <main>
-        <div class="input">
-            <input type="number" style="border-color: red; color: red; width: 80px;" placeholder="Num 1">
-            <input type="number" style="color: orange; border-color: orange; width: 80px;" placeholder="Num 2">
-            <input type="number" style="border-color: rgb(45, 216, 45); color: rgb(56, 231, 56); width: 80px;" placeholder="Num 3">
-        </div>    
-        <button style="color: rgb(74, 204, 74); background-color: rgb(236, 206, 167);">Sum</button>
-        <button style="color: rgb(245, 163, 12); background-color: rgb(240, 204, 158); margin-left: 0.2px;">Average</button>
+      <div class="input">
+        <input
+          id="first-input"
+          type="number"
+          style="border-color: red; color: red; width: 80px"
+          placeholder="Num 1"
+        />
+        <input
+          id="second-input"
+          type="number"
+          style="color: orange; border-color: orange; width: 80px"
+          placeholder="Num 2"
+        />
+        <input
+          id="third-input"
+          type="number"
+          style="
+            border-color: rgb(45, 216, 45);
+            color: rgb(56, 231, 56);
+            width: 80px;
+          "
+          placeholder="Num 3"
+        />
+      </div>
 
-        <h4>Average: ....</h4>
+      <button
+        id="sum-btn"
+        style="color: rgb(74, 204, 74); background-color: rgb(236, 206, 167)"
+      >
+        Sum
+      </button>
+      <button
+        id="average-btn"
+        style="
+          color: rgb(245, 163, 12);
+          margin-left: 0.2px;
+          background-color: rgb(240, 204, 158);
+        "
+      >
+        Average
+      </button>
+
+      <h4 id="screen"></h4>
     </main>
-    
-</body>
+    <script>
+      const firstInputEl = document.getElementById("first-input");
+      const secondInputEl = document.getElementById("second-input");
+      const thirdInputEl = document.getElementById("third-input");
+
+      const sumBtn = document.querySelector("#sum-btn");
+      const averageBtn = document.querySelector("#average-btn");
+
+      const screenEl = document.getElementById("screen");
+      sumBtn.addEventListener("click", () => {
+        const sum =
+          Number(firstInputEl.value) +
+          Number(secondInputEl.value) +
+          parseInt(thirdInputEl.value);
+
+        screenEl.textContent = "The sum is: " + sum;
+      });
+
+      averageBtn.addEventListener("click", function () {
+        const n1 = Number(firstInputEl.value);
+        const n2 = Number(secondInputEl.value);
+        const n3 = Number(thirdInputEl.value);
+
+        const average = (n1 + n2 + n3) / 3;
+
+        screenEl.innerText = "The average is : " + average;
+      });
+    </script>
+  </body>
 </html>
