@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Membership</title>
+  </head>
+
+  <style>
+    button {
+      padding: 1rem 3rem;
+    }
+
+    input {
+      padding: 6px 12px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: fit-content;
+      border: solid gray 1px;
+      padding: 20px;
+      border-radius: 1rem;
+      box-shadow: 0 0 1px black;
+    }
+
+    form label {
+      display: grid;
+      gap: 0.51rem;
+    }
+
+    form h4 {
+      margin: 0;
+    }
+  </style>
+  <body>
+    <form id="registration-form">
+      <h4>Membership Registration Form</h4>
+      <label for="fullname">
+        Full Name
+        <input type="text" name="fullname" id="fullname" />
+      </label>
+
+      <button>Register</button>
+    </form>
+
+    <br />
+
+    <hr />
+
+    <br />
+    <!-- Output table -->
+
+    <h4>Registered Members</h4>
+    <ol id="list"></ol>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
